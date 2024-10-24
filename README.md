@@ -7,12 +7,13 @@ ___
 <h1 style="text-align: center;color:blue"><u>Trabajo Práctico 3</u></h1>
 <h3 style="text-align: center;">Patrones de Diseño</h3>
 ###### Alumnos:
+
 >Gigena, Maximo
 >Eitner, Bianca Michelle
 >Fernandez, Lautaro
 >Lovera, Hernan
-### Consignas
 
+### Consignas
 ###### Objetivo: 
 El objetivo de este trabajo es que apliquen los patrones de diseño Adapter, Composite y Template Method en situaciones de desarrollo de software. Deberán diseñar y programar soluciones que implementen estos patrones.
 ###### Instrucciones:
@@ -48,13 +49,12 @@ Tienes que diseñar un sistema de gestión de archivos y directorios, donde tant
   2. Crea las clases File y Directory que hereden de FileSystemComponent. Los objetos de la clase Directory pueden contener tanto archivos como otros directorios.
   3. Implementa una función en la clase Directory para agregar y eliminar componentes (archivos o directorios).
   4. Implementa un cliente que permita crear una estructura jerárquica de directorios y archivos, y que muestre los detalles de esta estructura.
-Requisitos:
- La clase File debe tener un nombre y su tamaño en bytes.
- La clase Directory debe poder contener una lista de objetos FileSystemComponent.
- El método showDetails() debe imprimir el nombre del archivo o directorio, y en el caso
-de los directorios, debe listar su contenido de manera recursiva.
-Puntos clave a evaluar:
- Correcta aplicación del patrón Composite.
- Implementación de la recursividad para mostrar los detalles de los directorios y sus
+**Requisitos:**
+-  La clase File debe tener un nombre y su tamaño en bytes.
+- La clase Directory debe poder contener una lista de objetos FileSystemComponent.
+- El método showDetails() debe imprimir el nombre del archivo o directorio, y en el caso de los directorios, debe listar su contenido de manera recursiva.
+**Puntos clave a evaluar:**
+- Correcta aplicación del patrón Composite.
+- Implementación de la recursividad para mostrar los detalles de los directorios y sus
 contenidos.
- Diagrama de clases que refleje la jerarquía de objetos compuestos.
+- Diagrama de clases que refleje la jerarquía de objetos compuestos.

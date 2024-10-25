@@ -87,6 +87,10 @@ Debes desarrollar un sistema que gestione el proceso de fabricación de diferent
 
 <h3 style="text-align: center;">Desarrollo</h3>
 
+#### Ejercicio 1: Patrón Adapter
+###### Diagrama de clases sistema de gestion de archivos y directorios
+![DiagramaDeClases_Musica](https://i.imgur.com/htKIfaG.jpeg)
+
 #### Ejercicio 2: Patrón Composite
 ###### Diagrama de clases sistema de gestion de archivos y directorios
 ![DiagramaDeClases_GestionArchivos](https://i.imgur.com/Fe4TNSG.png)
@@ -99,6 +103,9 @@ La clase Directory además contiene una lista de objetos de tipo FileSystemCompo
 
 Tanto File como Directory heredan de FileSystemComponent, lo que refleja la naturaleza del patrón Composite, donde ambos (archivos y directorios) deben ser tratados de forma uniforme. Mediante la herencia, compartimos los atributos y el comportamiento común de ambos (el nombre y el método showDetails()).
 
-#### Ejercicio 1: Patrón Adapter
-###### Diagrama de clases sistema de gestion de archivos y directorios
-![DiagramaDeClases_Musica](https://i.imgur.com/htKIfaG.jpeg)
+### Ejercicio 3: Patrón Template Method
+#### Diagrama de clases sistema de gestion de fabricación de pasteles
+![Sistema de preparación de Pasteles (DDC) vpd](https://github.com/user-attachments/assets/ed3e6362-2975-4b90-9e51-f4534423eb47)
+
+El patrón de diseño "Template Method" sirve para estructurar los procesos que se realizarán en el código de manera eficiente y reutilizable. En este ejemplo, la clase abstracta "Cake" define el flujo general a través del método "makeCake()", que organiza los pasos esenciales (preparar ingredientes, hornear, decorar y empaquetar). Las subclases "VanillaCake" y "ChocolateCake" heredan de "Cake" y proporcionan sus propias implementaciones para estos pasos específicos, garantizando que cada tipo de pastel siga el mismo proceso básico, pero con detalles personalizados.
+Este enfoque permite una alta reutilización de código, ya que el flujo general está centralizado en la clase Cake, y las subclases solo necesitan definir las particularidades de su tipo de pastel.

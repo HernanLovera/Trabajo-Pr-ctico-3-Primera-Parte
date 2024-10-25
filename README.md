@@ -87,6 +87,10 @@ Debes desarrollar un sistema que gestione el proceso de fabricación de diferent
 
 <h3 style="text-align: center;">Desarrollo</h3>
 
+#### Ejercicio 1: Patrón Adapter
+###### Diagrama de clases sistema de gestion de archivos y directorios
+![DiagramaDeClases_Musica](https://i.imgur.com/htKIfaG.jpeg)
+
 #### Ejercicio 2: Patrón Composite
 ###### Diagrama de clases sistema de gestion de archivos y directorios
 ![DiagramaDeClases_GestionArchivos](https://i.imgur.com/Fe4TNSG.png)
@@ -98,7 +102,3 @@ La clase _*Directory*_ representa un directorio dentro del sistema de archivos. 
 La clase Directory además contiene una lista de objetos de tipo FileSystemComponent, esta relación es de composición, lo que significa que un directorio está compuesto por múltiples archivos y otros directorios. La composición se utiliza porque un directorio puede tener un ciclo de vida independiente de los archivos y directorios que contiene, Si se destruyese un directorio, también deberían destruirse los archivos y directorios que contiene.
 
 Tanto File como Directory heredan de FileSystemComponent, lo que refleja la naturaleza del patrón Composite, donde ambos (archivos y directorios) deben ser tratados de forma uniforme. Mediante la herencia, compartimos los atributos y el comportamiento común de ambos (el nombre y el método showDetails()).
-
-#### Ejercicio 1: Patrón Adapter
-###### Diagrama de clases sistema de gestion de archivos y directorios
-![DiagramaDeClases_Musica](https://i.imgur.com/htKIfaG.jpeg)
